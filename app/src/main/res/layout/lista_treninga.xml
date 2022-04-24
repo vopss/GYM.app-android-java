@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/roditelj"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="7dp">
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nerasirenRelativeLayout">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                android:id="@+id/slikaTreninga"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ime treninga"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/slikaTreninga"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:id="@+id/imeTreninga"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_below="@id/slikaTreninga"
+                android:layout_marginTop="7dp"
+                android:id="@+id/btnDonjaStrelica"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nerasirenRelativeLayout"
+        android:id="@+id/rasirenRelativeLayout"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kratki opis"
+            android:id="@+id/kratkiOpisTreninga"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_up_arrow"
+            android:layout_below="@id/kratkiOpisTreninga"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btnGornjaStrelica"/>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

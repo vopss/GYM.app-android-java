@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/parent"
+    app:cardElevation="7dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/collapsedRelLayout">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:id="@+id/slikaTreningUTeretani"
+                android:src="@mipmap/trening_u_teretani"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trening u teretani"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/slikaTreningUTeretani"
+                android:id="@+id/txtTreningUTeretani"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                >
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_below="@id/slikaTreningUTeretani"
+                android:id="@+id/btnDownArrow"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"></ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collapsedRelLayout"
+            android:id="@+id/expandedRelLayout"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena: "
+                android:id="@+id/CenaText"
+                android:layout_marginTop="7dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CenaText"
+                android:id="@+id/trajanjeText"
+                android:text="Trajanje paketa 360 dana"
+                android:layout_marginTop="7dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neograničeno korišćenje teretane"
+                android:layout_below="@+id/trajanjeText"
+                android:id="@+id/koriscenjeText"
+                android:layout_marginTop="7dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poklon baučer probni treninzi"
+                android:layout_below="@+id/koriscenjeText"
+                android:id="@+id/poklon"
+                android:layout_marginTop="7dp"
+                >
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_up_arrow"
+                android:layout_below="@id/koriscenjeText"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/btnUpArrow"></ImageView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
